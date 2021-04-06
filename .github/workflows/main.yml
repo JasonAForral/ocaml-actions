@@ -6,7 +6,8 @@ jobs:
         steps:
           - run: sudo apt update
           - run: sudo apt install ocaml --no-install-recommends -y
-          - run: sudo apt install ocamlc --no-install-recommends -y
+          # - run: sudo apt install ocamlc --no-install-recommends -y
           - uses: actions/checkout@v2
+          - run: ocamlc --version
           - run: make
           # - run: ./driver tests/*.r
