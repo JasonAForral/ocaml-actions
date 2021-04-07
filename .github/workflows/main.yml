@@ -25,7 +25,7 @@ jobs:
       - run: sudo apt update
       - run: sudo apt install ocaml --no-install-recommends -y
       - uses: actions/checkout@v2
-      - run: make
+      - run: make clean;make
   test:
     # The type of runner that the job will run on
     needs: build
@@ -33,5 +33,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: make
+      - uses: actions/checkout@v2
+      - run: make clean;make
       - run: ./driver tests/*.r
