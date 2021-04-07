@@ -1,1 +1,1 @@
-Printf.printf("Hello\n")
+Printf.printf "Hello\n"

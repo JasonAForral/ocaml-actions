@@ -5,7 +5,7 @@
 *.a
 *.o
 *.cmx
-*.cmxs
+*.cmxsoca
 *.cmxa
 
 # ocamlbuild working directory
@@ -27,3 +27,9 @@ setup.log
 
 # Local OPAM switch
 _opam/
+
+._d/*
+*~
+driver
+driver.top
+tests/*[1-9]
